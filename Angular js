@@ -1,0 +1,271 @@
+<body>
+    <h1>Footer</h1>
+
+    <div class="Footer">
+        <div class = "row">
+    <style>
+       .Footer
+        {
+            position: absolute;
+            height: 100px;
+            padding: 100px;
+            margin:20px;
+            width:50pc;
+            left:40px;
+        }
+        h1{
+            margin:100px;
+            padding:90px;
+            left:20pc;
+            right:15pc;
+        }
+        </style>
+        <h1> Header</h1>
+        <style>
+            h1{
+                position:absolute;
+                left:60px;
+                margin:80px;
+                padding:70px;
+                font:larger;
+                text-align: left;
+
+            }
+        </style>
+        </div>
+    </body>
+<body>
+    <html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    <center>
+body {
+  margin: 1;
+  font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  right:100px;
+  top:100px;
+  background-color: green;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidebar a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  border-top: 100px;
+  right: 100px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    right: 100px;
+    top:100px;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="sidebar">
+  <a class="content" href="Header">header</a>
+  <a href = "footer">footer</a>
+</div>
+
+<div class="content">
+</center>
+  
+</body>
+</html>
+</body>
+<script>
+    src = "https://ajax.googleapis.com/ajax/libs/angular/1.6.9/angular.min.js">
+
+</script>
+<html>
+    <title> Employees listing page</title>
+    <style>
+    table, th , td{
+      border: 1px solid;
+    }
+    </style>
+    <body>
+    <table>
+    <tr>
+        <th>employee</th>
+        <th> degree</th>
+        <th> others</th>
+        </tr>
+        <tr>
+        <td> Name</td>
+         <td> qualification</td>
+         <td> age</td>
+         <td> experience</td>
+    </tr>
+    </table>
+    </div>
+</body>
+<script>
+    src = "https://ajax.googleapis.com/ajax/libs/angular/1.6.9/angular.min.js">
+
+</script>
+<body  ng-app="sampleApp">
+    <script src="https://code.angularjs.org/1.6.9/angular-route.js"></script>
+    <script src="https://code.angularjs.org/1.6.9/angular.min.js"></script>
+    <script src="https://code.angularjs.org/1.6.9/angular.js"></script>
+    <script src="lib/bootstrap.js"></script>
+    <script src="lib/bootstrap.css"></script>
+    <h1> </h1>
+    <div ng-controller="AngularController">
+    
+        <form ng-submit="Display()">
+            &nbsp;&nbsp;&nbsp;
+            Enter your name
+            <input type="text"  ng-app="sampleApp" ng-model="Name"><br>
+            password <input type = "text" ng-app = "sampleApp" ng-model = "password"><br>
+            <input type="submit" value="Submit"/>
+    
+            <ul ng-repeat="name">
+            <ul ng-repeat = "password">
+                <li>{{name}}</li>
+                <li>{{password}}</li>
+            </ul>
+            </ul>
+        </form>
+    </div>
+    
+    <script>
+       var sampleApp = angular.module("sampleApp",[]);
+    
+        sampleApp.controller("AngularController",function($scope) {
+            $scope.AllTopic=[];
+            $scope.Display = function () {
+                $scope.Name.push($scope.name);
+                $scope.password.push($scope.password);
+            }
+        });
+    </script>
+    </body>
+    </html>
+<script>
+ var myApp = angular.module("myModule", []);
+ var myController = function ($scope)
+     {
+          var Employee = [
+          {
+               LastName: "surya",Gender: "Male",Address: "hyderabad",
+          },
+          {
+               FirstName: "pranav",LastName: "surya",Gender: "Male",Address: "hyderabad",
+          },
+
+          {
+              FirstName: "sumanth" , LastName:"sai" , Gender:"Male" , Address:"vijayawada",
+          },
+          {
+              FirstName: "sindhu" , LastName:"pv" , Gender:"Female" , Address:"telangana",
+          },
+          {
+              FirstName: "benny" , LastName:"joseph" , Gender:"Male" , Address:"vijayawada",
+          },
+          {
+              FirstName: "sai" , LastName:"sai123" , Gender:"Male" , Address:"vijayawada",
+          },
+          {
+              FirstName: "komali" , LastName:"marneni" , Gender:"Female" , Address:"ongole",
+          },
+          {
+               FirstName: "pavan",LastName: "kumar",Gender: "male",Address: "US",
+          },
+          {
+               FirstName: "Divya",LastName: "sree",Gender: "Female",Address: "vijayawada",
+          },
+          {
+               FirstName: "Sai",LastName: "Viraj",Gender: "Male",Address: "vijayawada",
+          }];
+     $scope.Emp = Employee;
+     };
+myApp.controller("myCont", myController);
+</script>
+
+ <html ng-app="myModule">
+     <head>
+          <script src="Scripts/angular.min.js" type="text/javascript"></script>
+          <script src="Scripts/Script.js"></script>
+          <style>
+               table, th, td
+               {
+                    border: 1px solid grey;
+                    border-collapse: collapse;
+                    padding: 5px;
+               }
+               table tr:nth-child(odd)
+               {
+                    background-color: #ffe6e6;
+               }
+               table tr:nth-child(even)
+               {
+                    background-color: #ccffcc;
+               }
+          </style>
+     </head>
+     <body style="font-family:Arial; font-size:medium; color:red">
+          <div ng-controller="myCont">
+               <h3>Search functionality in AngularJS.</h3>
+               <br/>
+               <h3> Search Employee : <input type="text" ng-model= "searchEmp"/></h3>
+               <br/><br/>
+               <table>
+                    <tr>
+                         <th>FirstName</th>
+                         <th>LastName</th>
+                         <th>Gender</th>
+                         <th>Address</th>
+                    </tr>
+                    <tr ng-repeat="e in Emp | filter:searchEmp">
+                         <td>{{e.FirstName}}</td>
+                         <td>{{e.LastName}}</td>
+                         <td>{{e.Gender}}</td>
+                         <td>{{e.Address}}</td>
+                    </tr>
+               </table>
+          </div>
+     </body>
+</html>
